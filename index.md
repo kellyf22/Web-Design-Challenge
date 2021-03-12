@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Web Design Challenge!
 
 You can use the [editor on GitHub](https://github.com/kellyf22/Web-Design-Challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
