@@ -11,51 +11,93 @@
 <body>
 
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light float-end">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="vis_temp.html">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="vis_humidity.html">Humidity</a></li>
-                <li><a class="dropdown-item" href="vis_clouds.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="vis_wind_speed.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Comparisons.html">Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-            
-          </ul>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light float-end">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="vis_temp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="vis_humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="vis_clouds.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="vis_wind_speed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Comparisons.html">Comparisons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
+    
+    <div class="row">
+      <!-- Main content in a column of width 8 -->
+      <div class="col-md-8">
+        <h2>Wind Speed vs Latitude</h2>
+        <div class="thumbnail">
+          <img src="assets/Wind_Lat.png" alt="..." class="img-thumbnail">
+        </div>
+        <p></p>
+        <p>Wind speed vs latitude shows most wind conditions across latitudes are moderate at below 20 mph or so. 
+          Extreme wind speeds appear to be more prevalent in the northern hemisphere, with the highest observation of about 40 mph at around 60 deg N latitude. 
+          This is likely again due to seasonal variation between hemispheres.</p>
+
+        <p>However, we should also note here that we have no data points further south than 60 degrees, whereas in the northern hemisphere there are numerous data points north of 60 degrees. 
+          This makes sense because the arctic is populated and the antarctic isn't. 
+          But if we are interested in global wind speeds, this random selection of cities is not a good dataset since there are so few cities in the antarctic that could be included in an analysis.</p>
+        <p></p>  
       </div>
-    </nav>
-    <header class="header">
-      <h1>Latitude Vs Wind Speed</h1>
-    </header>
-    <main>
-      <section class="posts">
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Wind speed vs latitude shows most wind conditions across latitudes are moderate at below 20 mph or so. Extreme wind speeds appear to be more prevalent in the northern hemisphere, with the highest observation of about 40 mph at around 60 deg N latitude. This is likely again due to seasonal variation between hemispheres. However, we should also note here that we have no data points further south than 60 degrees, whereas in the northern hemisphere there are numerous data points north of 60 degrees. Of course this is because the arctic is more populated than the antarctic. But if we are interested in global wind speeds, this random selection of cities is not a good dataset since there are so few cities in the antarctic that could be included in an analysis.
-          </p>
-        
-      </section>
-    </main>
+      
+      <!-- Visualizations card in a column of width 4-->
+      <div class="col-md-4">
+        <h3>Visualizations</h3>
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 g-4">
+          <div class="col">
+            <a href="vis_temp.html">
+              <img src="assets/Temp_Lat.png" class="card-img-top" alt="Temperature Map">
+            </a>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="vis_clouds.html">
+                <img src="assets/Cloud_Lat.png" class="card-img-top" alt="Temperature Map">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="vis_humidity.html">
+                <img src="assets/Hum_Lat.png" class="card-img-top" alt="Temperature Map">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="vis_wind_speed.html">
+                <img src="assets/Wind_Lat.png" class="card-img-top" alt="Temperature Map">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
