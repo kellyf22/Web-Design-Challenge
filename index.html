@@ -43,18 +43,21 @@
     
     <div class="row">
       <!-- Summary in a column of width 8 -->
-      <div class="col-md-8">
+      <div class="col-md-8 text-wrap">
         <h2>Summary: Latitude vs. X</h2>
-        <div class="thumbnail">
-          <img src="assets/Cloud_Lat.png" alt="..." class="img-thumbnail">
-        </div>
+        
         <p></p>
-        <p>In this project, I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. 
+        <div class="align-text-around">
+        <!-- <img src="assets/Cloud_Lat.png" alt="..." class="img-thumbnail" style="vertical-align: text-top; width: 250px; height: 170px"> -->
+        <p>
+          <img src="assets/Cloud_Lat.png" alt="..." class="float-start" style="width: 250px; height: 170px">
+          In this project, I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. 
           To accomplish this, I used a Python library, <a href="https://pypi.python.org/pypi/citipy">Citipi</a>, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>, 
           and a little common sense to create a representative model of weather across world cities.</p>
         <p></p>  
         <p>A series of scatter plots showcases the relationships between latitude and maximum temperature, humidity, cloudiness, 
           and wind speed for over 500 randomly selected cities on February 8, 2021.</p>
+        </div>
       </div>
       
       <!-- Visualizations card in a column of width 4-->
